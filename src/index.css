@@ -6,8 +6,10 @@
      box-sizing: border-box;
 }
 :root{
-     --main-color: rgb(0, 166, 255);
+     --main-color: rgb(0, 163, 251);
      --bg-color: rgb(237, 244, 246);
+     --dark-color: rgb(0, 13, 21);
+     --border-radius: 5px;
 }
 body{
       font-family: "Madera-Regular";
@@ -34,4 +36,59 @@ img{
 .inner-row{
        width: 90%;
        margin: auto;
+}
+
+
+
+/* Header Styles */
+header{
+     height: 80px;
+}
+.header-content{
+      display: flex;
+      height: 80px;
+      align-items: center;
+      justify-content: space-between;
+}
+.header-content .logo h2{
+     font-size: 30px;
+     font-family: "Madera-Medium";
+     color: var(--dark-color);
+}
+.header-content nav,
+.header-content nav ul,
+.header-content nav .phone-btn{
+     display: flex;
+     align-items: center;
+     gap: 5px;
+}
+.header-content nav{
+      gap: 150px;
+}
+.header-content nav ul{
+      gap: 40px;
+}
+.header-content nav ul li a{
+     font-size: 15px;
+     color: var(--dark-color) ;
+}
+.header-content nav .phone-btn{
+      width: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      border-radius: var(--border-radius);
+      -webkit-border-radius: var(--border-radius);
+      -moz-border-radius: var(--border-radius);
+      -ms-border-radius: var(--border-radius);
+      -o-border-radius: var(--border-radius);
+      background-color: var(--main-color);
+      color: rgb(237, 244, 246);
+      cursor: pointer;
+}
+.header-content .phone-btn span{
+      display: flex;
+      font-size: 20px;
+      margin-top: 3px;
 }
