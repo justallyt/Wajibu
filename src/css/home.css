@@ -1,0 +1,47 @@
+.hero-section-content{
+    width: 1200px;
+    margin: 7.5% auto 0 auto;
+}
+
+.hero-texts h3{
+    font-family: "Madera-Light";
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: capitalize;
+}
+
+.hero-texts h3 span{
+      width: 50px;
+      height: 2px;
+      background: var(--main-color);
+      display: flex;
+      margin-top: 7px
+}
+.hero-texts h1{
+    font-size: 85px;
+    font-weight: 600;
+    line-height: 1.2em;
+    margin: 10px 0;
+}
+.hero-texts h1 span{
+       color: var(--main-color);
+}
+.hero-texts p{
+      font-size: 22px;
+      width: 85%;
+}
+
+.hero-texts .hero-btns{
+       margin-top: 30px;
+}
+
+
+
+
+@media(max-width: 1250px){
+       .hero-section-content{
+            width: 100%;
+       }
+}

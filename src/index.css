@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700;800;900&display=swap');
 
 *{
      margin: 0;
@@ -6,7 +6,7 @@
      box-sizing: border-box;
 }
 :root{
-     --main-color: rgb(0, 163, 251);
+     --main-color: rgb(0, 145, 240);
      --bg-color: rgb(237, 244, 246);
      --dark-color: rgb(0, 13, 21);
      --border-radius: 5px;
@@ -38,6 +38,98 @@ img{
        margin: auto;
 }
 
+.btn{
+  width: 200px;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  border: 2px solid var(--main-color);
+  align-items: center;
+  height: 50px;
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+  color: var(--main-color);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.btn span{
+  display: flex;
+  font-size: 20px;
+  margin-top: 3px;
+  position: relative;
+  z-index: 5;
+}
+.btn p,
+.btn a{
+    font-size: 15px;
+    position: relative;
+    text-align: center;
+    z-index: 5;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    color: var(--main-color);
+}
+.bubbles{
+      position: absolute;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+}
+.bubbles > div{
+     width: 25%;
+     height: 100%;
+     display: flex;
+     border-radius: 50%;
+     -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+     -ms-border-radius: 50%;
+     -o-border-radius: 50%;
+     background: var(--main-color);
+     transform: translateY(120%);
+     -webkit-transform: translateY(120%);
+     -moz-transform: translateY(120%);
+     -ms-transform: translateY(120%);
+     -o-transform: translateY(120%);
+     transition: 0.5s;
+     -webkit-transition: 0.5s;
+     -moz-transition: 0.5s;
+     -ms-transition: 0.5s;
+     -o-transition: 0.5s;
+     transition-delay: calc((var(--n) - 1) * 0.1s);
+}
+
+.bubbles div:nth-child(1){
+     --n: 1
+}
+.bubbles div:nth-child(2){
+  --n: 2
+}
+.bubbles div:nth-child(3){
+  --n: 3
+}
+.bubbles div:nth-child(4){
+  --n: 4
+}
+.btn:hover .bubbles div{
+     transform: translateY(0) scale(1.5);
+     -webkit-transform: translateY(0) scale(1.5);
+     -moz-transform: translateY(0) scale(1.5);
+     -ms-transform: translateY(0) scale(1.5);
+     -o-transform: translateY(0) scale(1.5);
+}
+.btn:hover p,
+.btn:hover span,
+.btn:hover a{
+    color: var(--bg-color);
+}
 
 
 /* Header Styles */
@@ -71,24 +163,29 @@ header{
 .header-content nav ul li a{
      font-size: 15px;
      color: var(--dark-color) ;
+     position: relative;
+     padding-bottom: 5px;
 }
-.header-content nav .phone-btn{
-      width: 200px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 50px;
-      border-radius: var(--border-radius);
-      -webkit-border-radius: var(--border-radius);
-      -moz-border-radius: var(--border-radius);
-      -ms-border-radius: var(--border-radius);
-      -o-border-radius: var(--border-radius);
-      background-color: var(--main-color);
-      color: rgb(237, 244, 246);
-      cursor: pointer;
+
+.header-content nav ul li a::after{
+     content: '';
+     width: 0%;
+     height: 2px;
+     background: var(--main-color);
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     transition: all 0.5s ease;
+     -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+     -ms-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
 }
-.header-content .phone-btn span{
-      display: flex;
-      font-size: 20px;
-      margin-top: 3px;
+.header-content nav ul li a:hover::after,
+.header-content nav ul li a.active::after{
+       width: 100%;
+}
+.header-content nav ul li a:hover,
+.header-content nav ul li a.active{
+       color: var(--main-color);;
 }

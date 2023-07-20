@@ -1,10 +1,10 @@
-import WholeNav from "./components/Navigation/WholeNav"
 import "./css/fonts.css"
+import Home from "./pages/Home"
 
 function App() {
   return (
        <>
-             <WholeNav />
+             <Home />
        </>
   )
 }
