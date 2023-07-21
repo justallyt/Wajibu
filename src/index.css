@@ -7,7 +7,7 @@
 }
 :root{
      --main-color: rgb(0, 145, 240);
-     --bg-color: rgb(237, 244, 246);
+     --bg-color: rgb(252, 255, 255);
      --dark-color: rgb(0, 13, 21);
      --border-radius: 5px;
 }
@@ -36,6 +36,7 @@ img{
 .inner-row{
        width: 90%;
        margin: auto;
+       position: relative;
 }
 
 .btn{

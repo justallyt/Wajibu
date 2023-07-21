@@ -1,6 +1,13 @@
+ .hero-section{
+       position: relative;
+       overflow: hidden;
+       padding-bottom: 60px;
+ }
 .hero-section-content{
     width: 1200px;
-    margin: 7.5% auto 0 auto;
+    margin:  auto;
+    padding-bottom: 40px;
+    padding-top: 7.5%;
 }
 
 .hero-texts h3{
@@ -37,9 +44,87 @@
        margin-top: 30px;
 }
 
-
-
-
+.bg-patterns{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 80vh;
+}
+.bg-patterns .bg-patterns-container{
+       height: 100%;
+       position: relative;
+}
+.bg-patterns-container .circle-dot{
+       font-size: 25px;
+       color: #FFDC40;
+       position: absolute;
+       left: 25%;
+}
+.bg-patterns-container .full-dot{
+      color: rgb(255, 77, 0);
+      position: absolute;
+      right: 20%;
+      top: -20px;
+      font-size: 40px;
+}
+.bg-patterns-container .triangle{
+       position: absolute;
+       left: 50%;
+       top: 15%;
+       font-size: 30px;
+       color: rgb(216, 62, 216);
+       transform: rotate(45deg);
+       -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+       -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+}
+.bg-patterns-container .rectangle{
+      position: absolute;
+      bottom: 0;
+      left: 40%;
+      color: rgb(0, 237, 110);
+      font-size: 25px;
+}
+.bg-patterns-container .rhombus{
+      position: absolute;
+      right: 0%;
+      top: 50%;
+      font-size: 40px;
+      color: rgb(165, 69, 42);
+}
+.bg-patterns-container .bold-star{
+       position: absolute;
+       top: 25%;
+       left: 3%;
+       color: rgba(203, 30, 128, 0.822);
+       font-size: 30px;
+}
+.bg-patterns-container .semi-circle{
+       position: absolute;
+       right: 25%;
+       bottom: 10%;
+       color: var(--main-color);
+       font-size: 30px;
+       transform: rotate(180deg);
+       -webkit-transform: rotate(180deg);
+       -moz-transform: rotate(180deg);
+       -ms-transform: rotate(180deg);
+       -o-transform: rotate(180deg);
+}
+.bg-patterns-container .zigzag{
+       position: absolute;
+       top: 50%;
+       right: 40%;
+       color: rgb(255, 212, 20);
+       font-size: 40px;
+       transform: rotate(35deg);
+       -webkit-transform: rotate(35deg);
+       -moz-transform: rotate(35deg);
+       -ms-transform: rotate(35deg);
+       -o-transform: rotate(35deg);
+}
 @media(max-width: 1250px){
        .hero-section-content{
             width: 100%;
