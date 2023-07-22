@@ -1,7 +1,7 @@
  .hero-section{
        position: relative;
        overflow: hidden;
-       padding-bottom: 60px;
+       padding-bottom: 300px;
  }
 .hero-section-content{
     width: 1200px;
@@ -125,6 +125,108 @@
        -ms-transform: rotate(35deg);
        -o-transform: rotate(35deg);
 }
+
+/* About Section Styles */
+.about-section{
+       background: var(--dark-color);
+       padding-bottom: 100px;
+}
+
+.about-section .hero-images-part{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 100px;
+        position: relative;
+        height: 250px
+}
+
+.hero-images-part img{
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        border-radius: var(--border-radius);
+        -webkit-border-radius: var(--border-radius);
+        -moz-border-radius: var(--border-radius);
+        -ms-border-radius: var(--border-radius);
+        -o-border-radius: var(--border-radius);
+}
+
+
+.company-features{
+       padding: 50px 0px 80px 0px;
+       color: var(--bg-color);
+}
+.company-features .intro{
+        text-align: center;
+        width: 80%;
+        margin: auto;
+}
+
+.intro h3{
+        font-size: 18px;
+        font-family: "Madera-Regular";
+        color: var(--main-color);
+}
+
+.intro h1{
+       font-size: 70px;
+       font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media(max-width: 1250px){
        .hero-section-content{
             width: 100%;
