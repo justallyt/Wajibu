@@ -72,6 +72,7 @@ const AboutSection = () => {
 
                    <div className="about-content">
                               <div className="inner-row">
+                                        <div className="about-sparkle"></div>
                                          <div className="about-content-grid">
                                                     <div className="about-content-column">
                                                               <div className="about-content-column-inner">

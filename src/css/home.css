@@ -256,7 +256,9 @@
         background: rgba(2, 132, 218, 0.385);
         backdrop-filter: blur(100px);
 }
-
+.about-content{
+         margin-bottom: 80px;
+}
 .about-content-grid{
          display: grid;
          grid-template-columns: repeat(2, 1fr);
@@ -330,11 +332,33 @@
         bottom: -10%;
 }
 
+.about-sparkle{
+        width: 70px;
+        height: 70px;
+        left: 40%;
+        background:var(--main-color);
+        position: absolute;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        filter: blur(70px);
+        -webkit-filter: blur(70px);
+}
 
+/* Services Section Styles */
+.services-section{
+        padding: 100px 0;
+}
 
-
-
-
+.services-section .intro{
+        text-align: center;
+}
+.services-section .intro h1{
+       width: 1000px;
+       margin: auto;
+}
 
 
 
