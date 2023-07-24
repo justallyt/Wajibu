@@ -364,14 +364,12 @@
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
         margin: 50px auto 0px auto;
+        gap: 30px;
+}
+.services-section-row .thin-column{
+       padding-top: 80px;
 }
 
-.thin-column{
-        border: 1px solid;
-}
-.wide-column{
-      border: 1px solid;
-}
 .wide-column .service-image-part{
         max-width: 363px;
         height: 568px;
@@ -385,11 +383,75 @@
        -o-border-radius: 200px;
 }
 
+.service-constituents{
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+       gap: 30px;
+       margin-top: -15%;
+}
+.service-box-moja{
+       background: var(--dark-color);
+       text-align: center;
+       padding: 40px 20px;
+       border-radius: 10px;
+       -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+       -ms-border-radius: 10px;
+       -o-border-radius: 10px;
+       -webkit-backdrop-filter: blur(50px);
+        backdrop-filter: blur(50px);
+        transition: all 0.8s ease;
+        -webkit-transition: all 0.8s ease;
+        -moz-transition: all 0.8s ease;
+        -ms-transition: all 0.8s ease;
+        -o-transition: all 0.8s ease;
+        cursor: pointer;
+        color: var(--bg-color);
+        height: max-content;
+}
+.service-box-moja.mb-adjust{
+       margin-top: 30px;
+}
 
+.service-box-moja .icon{
+        width: 60px;
+        height: 60px;
+        margin: auto;
+}
+.service-box-moja .icon img{
+       filter: invert(50%) sepia(55%) saturate(3408%) hue-rotate(169deg) brightness(98%) contrast(101%);
+}
 
-
-
-
+.service-box-moja h2{
+       font-family: "Madera-Light";
+       margin: 15px 0;
+       font-size: 24px;
+}
+.service-box-moja a{
+       color: var(--bg-color);
+       width: 50px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 50px;
+       margin: 10px auto;
+       border-radius: 50%;
+       -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+       -ms-border-radius: 50%;
+       -o-border-radius: 50%;
+       transition: all 0.6s ease;
+       -webkit-transition: all 0.6s ease;
+       -moz-transition: all 0.6s ease;
+       -ms-transition: all 0.6s ease;
+       -o-transition: all 0.6s ease;
+}
+.service-box-moja a:hover{
+      background: rgba(2, 132, 218, 0.385);
+}
+.service-box-moja span{
+       font-size: 20px;
+}
 
 
 
