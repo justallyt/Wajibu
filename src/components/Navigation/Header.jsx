@@ -8,7 +8,7 @@ const Header = () => {
                       <div className="header-content">
                                 <NavLink to={''}>
                                            <div className="logo">
-                                                    <h2>Wajibu</h2>
+                                                    <h2>PazaLab</h2>
                                            </div>
                                 </NavLink>
                                 <nav>
@@ -23,10 +23,10 @@ const Header = () => {
                                                     <span><BsPhoneVibrate /></span>
                                                     <p>+254 712345678</p>
                                                     <div className="bubbles">
-                                                                  <div></div>
-                                                                  <div></div>
-                                                                  <div></div>
-                                                                  <div></div>
+                                                            <div></div>
+                                                            <div></div>
+                                                            <div></div>
+                                                            <div></div>
                                                     </div>
                                          </div>
                                 </nav>

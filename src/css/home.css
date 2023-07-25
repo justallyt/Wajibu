@@ -349,7 +349,8 @@
 
 /* Services Section Styles */
 .services-section{
-        padding: 100px 0;
+        padding: 110px 0;
+        background: var(--bg-color);
 }
 
 .services-section .intro{
@@ -367,7 +368,7 @@
         gap: 30px;
 }
 .services-section-row .thin-column{
-       padding-top: 80px;
+       padding-top: 30px;
 }
 
 .wide-column .service-image-part{
@@ -453,15 +454,38 @@
        font-size: 20px;
 }
 
+/* Project Section part */
+.project-section{
+        padding: 100px 0;
+        background: rgb(246, 250, 251);
+}
 
+.project-intro{
+       display: flex;
+       gap: 100px;
+       width: 80%;
+       margin: auto;
+}
+.project-intro .tab-intro{
+       display: flex;
+       align-items: center;
+       gap: 30px;
+}
+.project-intro .tab-intro span{
+       width: 60px;
+       height: 2px;
+       background: var(--main-color);
+       margin-top: 8px;
+}
+.project-intro .tab-intro h2{
+       font-family: "Madera-Light";
+}
 
-
-
-
-
-
-
-
+.project-intro h1{
+       font-size: 60px;
+       font-weight: 600;
+       width: 550px
+}
 
 
 

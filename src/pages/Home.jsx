@@ -3,6 +3,7 @@ import HeroSection from "../components/HeroSection"
 import '../css/home.css'
 import AboutSection from "../components/AboutSection"
 import ServicesSection from "../components/ServicesSection"
+import ProjectSection from "../components/ProjectSection"
 const Home = () => {
   return (
     <>
@@ -10,6 +11,7 @@ const Home = () => {
            <HeroSection />
            <AboutSection />
            <ServicesSection />
+           <ProjectSection />
     </>
   )
 }
