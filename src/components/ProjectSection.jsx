@@ -2,6 +2,8 @@ import onixlab from "../assets/onixlab.png"
 import estate from "../assets/estate.png"
 import zones from "../assets/zones.png"
 import { AiOutlineLine } from "react-icons/ai"
+import { HiArrowLongLeft } from "react-icons/hi2"
+import { HiArrowLongRight } from "react-icons/hi2"
 import { NavLink } from "react-router-dom"
 const ProjectSection = () => {
   const projects = [
@@ -67,6 +69,10 @@ const ProjectSection = () => {
                                           </div>
                                         )}
                        </div>
+                       <div className="project-slider-btns">
+                                   <span><HiArrowLongLeft /></span>
+                                   <span><HiArrowLongRight /></span>
+                        </div>
                 </div>
     </div>
   )

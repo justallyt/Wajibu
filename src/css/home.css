@@ -458,6 +458,7 @@
 .project-section{
         padding: 100px 0;
         background: rgb(246, 250, 251);
+        overflow: hidden;
 }
 
 .project-intro{
@@ -557,10 +558,43 @@
        width: 100%;
 }
 
+.project-slider-btns{
+       margin-top: 40px;
+       display: flex;
+       justify-content: flex-end;
+       gap: 30px;
+}
 
-
-
-
+.project-slider-btns span{
+        font-size: 30px;
+        border: 1px solid var(--main-color);
+        color: var(--main-color);
+        height: 50px;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: var(--border-radius);
+        -webkit-border-radius: var(--border-radius);
+        cursor: pointer;
+        -moz-border-radius: var(--border-radius);
+        -ms-border-radius: var(--border-radius);
+        -o-border-radius: var(--border-radius);
+        transition: all 0.7s ease;
+        -webkit-transition: all 0.7s ease;
+        -moz-transition: all 0.7s ease;
+        -ms-transition: all 0.7s ease;
+        -o-transition: all 0.7s ease;
+}
+.project-slider-btns span:hover{
+       background:var(--main-color);
+       color: var(--bg-color);
+       transform: scale(0.95);
+       -webkit-transform: scale(0.95);
+       -moz-transform: scale(0.95);
+       -ms-transform: scale(0.95);
+       -o-transform: scale(0.95);
+}
 
 @media(max-width: 1250px){
        .hero-section-content{
