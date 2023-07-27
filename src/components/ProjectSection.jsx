@@ -5,6 +5,7 @@ import { AiOutlineLine } from "react-icons/ai"
 import { HiArrowLongLeft } from "react-icons/hi2"
 import { HiArrowLongRight } from "react-icons/hi2"
 import { NavLink } from "react-router-dom"
+import { useEffect, useRef } from "react"
 const ProjectSection = () => {
   const projects = [
     {
@@ -40,6 +41,45 @@ const ProjectSection = () => {
       link: ''
  },
   ]
+
+  const leftBtnRef = useRef()
+  const rightBtnRef = useRef()
+  const sliderRef = useRef()
+
+  useEffect(()=>{
+        const leftBtn = leftBtnRef.current
+        const rightBtn = rightBtnRef.current
+        const loadedSlider = sliderRef.current;
+        let counter = 0;
+        const portfolios = loadedSlider.querySelectorAll('.project-moja')
+        const size = portfolios[0].clientWidth + 30;
+
+        if(counter == 0){
+              leftBtn.classList.add("disabled")
+        }
+
+        leftBtn.addEventListener("click", () => {
+               rightBtn.classList.remove('disabled');
+               loadedSlider.style.transition = "all 0.8s ease";
+               counter--
+               loadedSlider.style.transform = 'translateX('+(-size * counter)+'px)';
+
+               if(counter == 0){
+                    leftBtn.classList.add("disabled")
+               }
+        })
+
+        rightBtn.addEventListener('click', () => {
+                leftBtn.classList.remove('disabled')
+                loadedSlider.style.transition = 'all 0.8s ease';
+                counter++;
+                loadedSlider.style.transform = 'translateX('+(-size * counter)+'px)';
+
+                if(counter >= portfolios.length - 1){
+                      rightBtn.classList.add('disabled')
+                }
+        })
+  }, [])
   return (
     <div  className="project-section">
                 <div className="inner-row">
@@ -54,6 +94,7 @@ const ProjectSection = () => {
                            </div>
 
                            <div className="portfolio-projects-wrapper">
+                                     <div className="portfolio-slide-track" ref={sliderRef}>
                                        { projects.map(item => 
                                          <div className="project-moja" key={item.id}>
                                                     <div className="project-image">
@@ -67,11 +108,12 @@ const ProjectSection = () => {
                                                             </div>
                                                     </div>
                                           </div>
-                                        )}
+                                         )}
+                                     </div>
                        </div>
                        <div className="project-slider-btns">
-                                   <span><HiArrowLongLeft /></span>
-                                   <span><HiArrowLongRight /></span>
+                                   <span ref={leftBtnRef}><HiArrowLongLeft /></span>
+                                   <span ref={rightBtnRef}><HiArrowLongRight /></span>
                         </div>
                 </div>
     </div>
