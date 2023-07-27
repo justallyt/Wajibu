@@ -603,20 +603,73 @@
 }
 
 
+/* Reasons Section */
+.reasons-section{
+       padding: 100px 0;
+       background: var(--dark-color);
+}
 
+.reasons-section-content{
+        width: 85%;
+        margin:auto;
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        gap: 80px;
+}
+.intro-hook-column{
+       color: var(--bg-color);
+}
 
+.intro-hook-column h3{
+        font-size: 20px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+}
+.intro-hook-column h3 span{
+        width: 50px;
+        height: 2px;
+        background: var(--main-color);
+       display: flex;
+       margin-top: 6px;
+}
+.intro-hook-column h1{
+       font-size: 65px;
+       font-weight: 600;
+       margin: 10px 0;
+}
+.intro-hook-column p{
+       font-size: 17px;
+       font-family: "Madera-Light";
+}
+.intro-hook-column .reason-image img{
+       margin-top: 40px;
+       border-radius: var(--border-radius);
+       -webkit-border-radius: var(--border-radius);
+       -moz-border-radius: var(--border-radius);
+       -ms-border-radius: var(--border-radius);
+       -o-border-radius: var(--border-radius);
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.major-reasons-column{
+       color: var(--bg-color);
+       padding-top: 50px;
+}
+.reason-box{
+        border-top: 1px solid rgba(43, 74, 96, 0.4);
+        padding: 50px 10px;
+}
+.reason-box h2{
+       font-size: 30px;
+       font-family: "Madera-Ultra";
+       margin-bottom: 10px;
+}
+.reason-box p{
+       line-height: 34px;
+       font-size: 17px;
+       font-family: "Madera-Light";
+}
 
 
 

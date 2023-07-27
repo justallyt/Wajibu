@@ -52,7 +52,7 @@ const ProjectSection = () => {
         const loadedSlider = sliderRef.current;
         let counter = 0;
         const portfolios = loadedSlider.querySelectorAll('.project-moja')
-        const size = portfolios[0].clientWidth + 30;
+        const size = portfolios[0].clientWidth + 50;
 
         if(counter == 0){
               leftBtn.classList.add("disabled")
