@@ -200,3 +200,42 @@ header{
 .header-content nav ul li a.active{
        color: var(--main-color);;
 }
+
+
+
+/* Footer Styles */
+footer{
+        background: var(--dark-color);
+        padding: 80px 0;
+}
+
+.footer-content{
+     color: var(--bg-color);
+}
+.footer-intro{
+     text-align: center;
+}
+.footer-intro .logo{
+       width: 180px;
+       margin: 10px auto;
+}
+.footer-intro h2{
+     font-size: 30px;
+}
+.footer-intro p{
+      font-family: "Madera-Light";
+      font-size: 18px;
+}
+
+.footer-content .footer-content-row{
+       display: grid;
+       width: 90%;
+       margin: 80px auto;
+       grid-template-columns: 2fr 3fr;
+}
+.other-columns-row{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1.5fr;
+     border: 1px solid white;
+     gap: 30px;
+}
