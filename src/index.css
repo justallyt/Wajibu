@@ -206,7 +206,7 @@ header{
 /* Footer Styles */
 footer{
         background: var(--dark-color);
-        padding: 80px 0;
+        padding: 80px 0 60px 0;
 }
 
 .footer-content{
@@ -232,12 +232,12 @@ footer{
        width: 90%;
        margin: 80px auto;
        grid-template-columns: 2fr 3.5fr;
-       gap: 30px;
+       gap: 20px;
 }
 .other-columns-row{
      display: grid;
      grid-template-columns: 1fr 1.3fr 1.5fr;
-     gap: 30px;
+     gap: 50px;
 }
 
 .footer-column h1{
@@ -333,7 +333,42 @@ footer{
 }
 .footer-social-links ul li a{
      font-size: 18px;
+     display: flex;
 }
 .footer-social-links ul li a:hover{
        margin-left: 0;
+       transform: scale(1.2);
+       -webkit-transform: scale(1.2);
+       -moz-transform: scale(1.2);
+       -ms-transform: scale(1.2);
+       -o-transform: scale(1.2);
+}
+
+.copyright{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-wrap: wrap;
+     padding-top: 40px;
+     border-top: 1px solid rgba(148, 164, 174, 0.351);
+}
+.copyright p,
+.copyright a{
+  font-size: 13px;
+  color: var(--bg-color);
+  font-family: "Madera-Light";
+  transition:all 0.5s ease;
+  -moz-transition:all 0.5s ease;
+  -ms-transition:all 0.5s ease;
+  -o-transition:all 0.5s ease;
+  -webkit-transition:all 0.5s ease;
+}
+.copyright .legal{
+     display: flex;
+     align-items: center;
+     gap: 20px;
+}
+.copyright .legal a:hover{
+      font-family: "Madera-Regular";
+      color: var(--main-color);
 }

@@ -64,6 +64,17 @@ const Footer = () => {
                                                 </div>
                                                 </div>
                                     </div>
+
+                                    <div className="copyright">
+                                                <div className="copyright-text">
+                                                          <p>Copyright &copy; {new Date().getFullYear()} Pazalab. All Rights Reserved</p>
+                                                </div>
+                                                <div className="legal">
+                                                           <NavLink to={'/'}>Terms of Service</NavLink>
+                                                           <span>|</span>
+                                                           <NavLink to={'/'}>Privacy Policy</NavLink>
+                                                </div>
+                                    </div>
                          </div>
                </div>
     </footer>
