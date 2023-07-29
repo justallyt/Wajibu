@@ -231,11 +231,109 @@ footer{
        display: grid;
        width: 90%;
        margin: 80px auto;
-       grid-template-columns: 2fr 3fr;
+       grid-template-columns: 2fr 3.5fr;
+       gap: 30px;
 }
 .other-columns-row{
      display: grid;
-     grid-template-columns: 1fr 1fr 1.5fr;
-     border: 1px solid white;
+     grid-template-columns: 1fr 1.3fr 1.5fr;
      gap: 30px;
+}
+
+.footer-column h1{
+     font-size: 60px;
+}
+.footer-column h1 span{
+     color: var(--main-color);
+}
+.footer-column p.hook{
+      width: 90%;
+      margin: 20px 0;
+      line-height: 30px;
+}
+
+.footer-column.first a {
+      color: var(--main-color);
+      font-weight: 600;
+      display: inline-block;
+}
+.footer-column.first a::after{
+       content: '';
+       width: 0%;
+       height: 1px;
+       background: var(--main-color);
+       display: block;
+       margin-top: 5px;
+       transition: all 0.7s ease;
+       -webkit-transition: all 0.7s ease;
+       -moz-transition: all 0.7s ease;
+       -ms-transition: all 0.7s ease;
+       -o-transition: all 0.7s ease;
+}
+.footer-column.first a:hover::after{
+       width: 100%;
+}
+
+.footer-column .footer-title{
+       font-family: "Madera-Ultra";
+       font-size: 18px;
+       margin-bottom: 20px;
+       display: inline-block;
+}
+.footer-column .footer-title::after,
+.footer-social-links h4::after{
+      content: '';
+      width: 30px;
+      height: 1px;
+      background-color: var(--main-color);
+      display: block;
+      margin-top: 5px;
+}
+
+.footer-column ul{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+}
+
+.footer-column ul li a{
+     color: var(--bg-color);
+     font-family: "Madera-Light";
+     transition: all 0.7s ease;
+     -webkit-transition: all 0.7s ease;
+     -moz-transition: all 0.7s ease;
+     -ms-transition: all 0.7s ease;
+     -o-transition: all 0.7s ease;
+}
+
+.footer-column ul li a:hover{
+     color: var(--main-color);
+    margin-left: 3px;
+}
+
+.footer-column.last p{
+       margin-bottom: 25px;
+       font-family: "Madera-Light";
+       display: flex;
+       align-items: center;
+       gap: 5px;
+}
+.footer-column.last p span{
+     margin-top:3px;
+}
+.footer-social-links h4{
+     margin-bottom: 20px;
+     font-family: "Madera-ultra";
+     font-size: 18px;
+     display: inline-block;
+}
+.footer-social-links ul{
+      flex-direction: row;
+      gap: 30px;
+}
+.footer-social-links ul li a{
+     font-size: 18px;
+}
+.footer-social-links ul li a:hover{
+       margin-left: 0;
 }

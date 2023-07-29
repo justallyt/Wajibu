@@ -2,6 +2,9 @@ import { NavLink } from "react-router-dom"
 import { IoCallSharp } from "react-icons/io5"
 import { BsFillEnvelopeFill } from "react-icons/bs"
 import { FaLocationDot } from "react-icons/fa6"
+import { GrFacebookOption, GrTwitter } from 'react-icons/gr'
+import { AiFillInstagram } from "react-icons/ai"
+import { RxLinkedinLogo } from "react-icons/rx"
 const Footer = () => {
   return (
     <footer>
@@ -15,11 +18,11 @@ const Footer = () => {
                                     </div>
 
                                     <div className="footer-content-row">
-                                                <div className="footer-column">
+                                                <div className="footer-column first">
                                                           <h1>Let&apos;s <span>work</span> together.</h1>
-                                                          <p>Would you like to create a web project that would strengthen your online presence? Or already have one and you&apos;re looking to revamp? Or you are not sure where to start?</p>
+                                                          <p className="hook">Would you like to create a web project that would strengthen your online presence? Or already have one and you&apos;re looking to revamp? Or you are not sure where to start?</p>
 
-                                                          <NavLink to={'/'}>Let&apos;s Talk</NavLink>
+                                                          <NavLink to={'/'}>Let&apos;s Talk.</NavLink>
                                                 </div>
                                                 <div className="other-columns-row">
                                                                    <div className="footer-column">
@@ -43,14 +46,20 @@ const Footer = () => {
                                                                      <li><NavLink to={'/'}>Website Revamp</NavLink></li>
                                                              </ul>
                                                 </div>
-                                                <div className="footer-column">
+                                                <div className="footer-column last">
                                                               <h2 className="footer-title">Contact Information</h2>
                                                               <p><span><IoCallSharp /></span> +254 100 938 394</p>
                                                               <p><span><BsFillEnvelopeFill /></span> hello@pazalab.com</p>
                                                               <p><span><FaLocationDot /></span>Nairobi, Kenya</p>
 
                                                               <div className="footer-social-links">
-                                                                         
+                                                                       <h4>Connect With Us</h4>
+                                                                         <ul>
+                                                                                    <li><NavLink to={'/'}><GrFacebookOption /></NavLink></li>
+                                                                                    <li><NavLink to={'/'}><GrTwitter /></NavLink></li>
+                                                                                    <li><NavLink to={'/'}><AiFillInstagram /></NavLink></li>
+                                                                                    <li><NavLink to={'/'}><RxLinkedinLogo /></NavLink></li>
+                                                                         </ul>
                                                               </div>
                                                 </div>
                                                 </div>
