@@ -7,7 +7,7 @@ const WholeNav = () => {
   return (
     <mobileMenuContext.Provider value={[status, setStatus]} >
               <Header />
-              {/* <Sidebar /> */}
+              <Sidebar />
     </mobileMenuContext.Provider>
   )
 }

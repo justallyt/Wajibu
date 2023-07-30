@@ -21,6 +21,12 @@ const HeroSection = () => {
                                    </div>
                         </div>
                        <div className="hero-section-content">
+                                  <div className="hero-sparkle"></div>
+                                  <div className="hero-sparkle-two"></div>
+                                  <div className="hero-sparkle-three"></div>
+                                  <div className="hero-sparkle-four"></div>
+                                  <div className="hero-sparkle-five"></div>
+                                  <div className="hero-sparkle-six"></div>
                                  <div className="hero-texts">
                                            <h3><span></span> Dedicated to digital excellence</h3>
                                            <h1>Creating next generation <span>web solutions</span></h1>

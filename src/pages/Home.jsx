@@ -14,12 +14,12 @@ const Home = () => {
            <WholeNav />
            <HeroSection />
            <AboutSection />
-           <ServicesSection />
+           {/* <ServicesSection />
            <ProjectSection />
            <Reasons />
            <Testimonials />
            <BlogSection />
-           <Footer />
+           <Footer /> */}
     </>
   )
 }
