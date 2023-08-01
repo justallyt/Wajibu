@@ -927,6 +927,9 @@
        .hero-section-content{
             width: 100%;
        }
+       .service-box-moja h2{
+              font-size: 18px;
+         }
 }
 @media(max-width: 1080px){
       .hero-texts{
@@ -976,6 +979,23 @@
                   top: 20%;
                   max-height: 300px
          }
+         .services-section .intro h1{
+               width: 90%;
+         }
+
+         .services-section-row{
+               grid-template-columns: 1fr;
+         }
+
+         .services-section-row .thin-column{
+              display: grid;
+              gap: 30px;
+               grid-template-columns: repeat(2,1fr);
+               padding-top: 0;
+         }
+         .service-box-moja.mb-adjust{
+              margin-top: 0;
+         }
 }
 
 @media(max-width: 768px){
@@ -1011,6 +1031,10 @@
          }
          .about-content-images .horizontal{
                 max-height: 50%;
+         }
+         .services-section-row .thin-column,
+         .service-constituents{
+                grid-template-columns: 1fr;
          }
 }
 

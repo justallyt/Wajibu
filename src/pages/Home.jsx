@@ -14,9 +14,9 @@ const Home = () => {
            <WholeNav />
            <HeroSection />
            <AboutSection />
-           {/* <ServicesSection />
+           <ServicesSection />
            <ProjectSection />
-           <Reasons />
+           {/* <Reasons />
            <Testimonials />
            <BlogSection />
            <Footer /> */}

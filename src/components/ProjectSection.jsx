@@ -52,7 +52,7 @@ const ProjectSection = () => {
         const loadedSlider = sliderRef.current;
         let counter = 0;
         const portfolios = loadedSlider.querySelectorAll('.project-moja')
-        const size = portfolios[0].clientWidth + 50;
+        const size = portfolios[0].clientWidth + 100;
 
         if(counter == 0){
               leftBtn.classList.add("disabled")
@@ -62,8 +62,17 @@ const ProjectSection = () => {
                rightBtn.classList.remove('disabled');
                loadedSlider.style.transition = "all 0.8s ease";
                counter--
-               loadedSlider.style.transform = 'translateX('+(-size * counter)+'px)';
-
+               
+               if(window.innerWidth > 1200){
+                        loadedSlider.style.transform = 'translateX('+(-size * counter)+'px)';                 
+               }else{
+                      if(window.innerWidth > 875){
+                              loadedSlider.style.transform = 'translateX('+(-(size + 100) * counter)+'px)';
+                      }else{
+                                 loadedSlider.style.transform = 'translateX('+(-(size + 200) * counter)+'px)';
+                      }
+                         
+               }
                if(counter == 0){
                     leftBtn.classList.add("disabled")
                }
@@ -73,7 +82,17 @@ const ProjectSection = () => {
                 leftBtn.classList.remove('disabled')
                 loadedSlider.style.transition = 'all 0.8s ease';
                 counter++;
-                loadedSlider.style.transform = 'translateX('+(-size * counter)+'px)';
+
+                if(window.innerWidth > 1200){
+                         loadedSlider.style.transform = 'translateX('+(-size * counter)+'px)';
+                }else{
+                        if(window.innerWidth > 875){
+                                loadedSlider.style.transform = 'translateX('+(-(size + 100) * counter)+'px)';
+                        }else{
+                                 loadedSlider.style.transform = 'translateX('+(-(size + 200) * counter)+'px)';
+                        }
+                }
+                
 
                 if(counter >= portfolios.length - 1){
                       rightBtn.classList.add('disabled')
