@@ -52,7 +52,7 @@ const AboutSection = () => {
                    <div className="company-features">
                               <div className="inner-row">
                                            <div className="small-spark"></div>
-                                           
+
                                            <div className="intro"> 
                                                      <h3>Core Features</h3>
                                                      <h1>Going above and beyond in making your brand shine and unique.</h1>
@@ -74,6 +74,8 @@ const AboutSection = () => {
                    <div className="about-content">
                               <div className="inner-row">
                                         <div className="about-sparkle"></div>
+                                        <div className="hero-sparkle-six"></div>
+                                        <div className="hero-sparkle-five"></div>
                                          <div className="about-content-grid">
                                                     <div className="about-content-column">
                                                               <div className="about-content-column-inner">

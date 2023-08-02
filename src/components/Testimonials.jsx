@@ -33,6 +33,11 @@ const Testimonials = () => {
                                                        <h1>Our Happy Clients</h1>
                                                        <p>Don&apos;t just trust our word. See what some of our recent clients say about working with us.</p>
                                            </div>
+                                           <div className="hero-sparkle-two"></div>
+                                           <div className="hero-sparkle-three"></div>
+                                           <div className="hero-sparkle-six"></div>
+                                           <div className="hero-sparkle-five"></div>
+                                           <div className="hero-sparkle-four"></div>
                                            <div className="testimonials-section-row">
                                                       <Swiper
                                                               slidesPerView={1}

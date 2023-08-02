@@ -16,7 +16,10 @@ const ServicesSection = () => {
                                                <h3>What We do</h3>
                                                <h1>We turn your Ideas into Elegant designs and great experiences.</h1>
                                       </div>
-
+                                      <div className="hero-sparkle-four"></div>
+                                      <div className="hero-sparkle-two"></div>
+                                      <div className="hero-sparkle-three"></div>
+                                      <div className="hero-sparkle-five"></div>
                                       <div className="services-section-row">
                                                    <div className="thin-column">
                                                                <div className="service-box-moja ml-adjust">
@@ -38,7 +41,7 @@ const ServicesSection = () => {
                                                                 <div className="service-image-part">
                                                                              <img src={serviceImg} alt="" />
                                                                 </div>
-
+                                                                <div className="hero-sparkle"></div>
                                                                 <div className="service-constituents">
                                                                               <div className="service-box-moja">
                                                                                            <div className="icon">

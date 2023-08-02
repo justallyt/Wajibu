@@ -111,8 +111,10 @@ const ProjectSection = () => {
                                                    <h1>Some of our favorite projects.</h1>
                                        </div>
                            </div>
-
+                           <div className="hero-sparkle-four"></div>
+                           <div className="hero-sparkle-two"></div>
                            <div className="portfolio-projects-wrapper">
+                                     <div className="hero-sparkle-six"></div>
                                      <div className="portfolio-slide-track" ref={sliderRef}>
                                        { projects.map(item => 
                                          <div className="project-moja" key={item.id}>

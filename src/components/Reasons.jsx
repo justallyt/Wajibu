@@ -28,13 +28,16 @@ const Reasons = () => {
                          <div className="reasons-section-content">
                                      <div className="intro-hook-column">
                                                 <h3><span></span> Why Us</h3>
-                                                <h1>We&apos;re the Best</h1>
+                                                <h1>We&apos;re the <span>Best</span></h1>
                                                 <p>Pazalab specializes solely in web technologies and constantly stay on the cutting edge, developing the best practices required to deliver exceptional services.</p>
 
                                                 <div className="reason-image">
                                                           <img src={reason} alt="" />
                                                 </div>
                                      </div>
+                                     <div className="hero-sparkle"></div>
+                                     <div className="hero-sparkle-three"></div>
+                                     <div className="hero-sparkle-four"></div>
                                      <div className="major-reasons-column">
                                                { reasons.map(item => 
                                                       <div className="reason-box" key={item.id}>
