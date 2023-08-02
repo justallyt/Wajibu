@@ -19,6 +19,13 @@
     z-index: 5;
     position: relative;
     text-transform: capitalize;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    opacity: 0;
+    transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    -o-transform: translateY(50px);
 }
 
 .hero-texts h3 span{
@@ -36,6 +43,13 @@
     margin: 10px 0;
     position: relative;
     z-index: 5;
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    opacity: 0;
+    transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    -o-transform: translateY(50px);
 }
 .hero-texts h1 span{
        color: var(--main-color);
@@ -45,10 +59,22 @@
       width: 85%;
       z-index: 5;
       position: relative;
+      opacity: 0;
+      transform: translateY(80px);
+      -webkit-transform: translateY(80px);
+      -moz-transform: translateY(80px);
+      -ms-transform: translateY(80px);
+      -o-transform: translateY(80px);
 }
 
 .hero-texts .hero-btns{
        margin-top: 30px;
+       opacity: 0;
+       transform: translateY(80px);
+       -webkit-transform: translateY(80px);
+       -moz-transform: translateY(80px);
+       -ms-transform: translateY(80px);
+       -o-transform: translateY(80px);
 }
 
 .bg-patterns{
@@ -493,6 +519,7 @@
         padding: 110px 0;
         background: var(--bg-color);
         position: relative;
+        overflow: hidden;
 }
 .services-section .hero-sparkle-four{
        top: 0%;
@@ -578,6 +605,7 @@
        -moz-border-radius: 200px;
        -ms-border-radius: 200px;
        -o-border-radius: 200px;
+       object-fit: cover;
 }
 
 .service-constituents{
@@ -914,6 +942,7 @@
 /* Testimonials Section */
 .testimonials-section{
        padding: 100px 0;
+       overflow: hidden;
 }
 .testimonials-section .hero-sparkle-six{
         bottom: 0;
@@ -958,7 +987,6 @@
        line-height: 40px;
 }
 .testimonial-moja .testimonial-text{
-       margin-top: 30px;
        display: flex;
        flex-direction: column;
        gap: 5px;
@@ -974,6 +1002,20 @@
 .blog-section{
        padding: 100px 0;
        background: rgb(246, 250, 251);
+}
+
+.blog-section .hero-sparkle{
+        top: 0;
+        right: 60%;
+}
+.blog-section .hero-sparkle-two{
+        left: auto;
+        right: 0;
+        top: 15%
+}
+.blog-section .hero-sparkle-four{
+        bottom: 0;
+        left: 15%;
 }
 .blog-section-content .blog-intro {
         display: flex;
@@ -1188,7 +1230,12 @@
 
 @media(max-width: 768px){
        .hero-section-content{
-                padding-top: 10%
+                padding-top: 100px;
+       }
+       .bg-patterns-container .rhombus,
+       .bg-patterns-container .zigzag,
+       .bg-patterns-container .bold-star{
+               opacity: 0.2;
        }
        .hero-texts h3{
                font-size: 20px;
@@ -1231,7 +1278,7 @@
                 font-size: 16px;
          }
          .intro-hook-column .reason-image{
-                width: 80%;
+                width: 100%;
          }
          .testimonials-section .intro p{
                  width: 100%;
@@ -1251,12 +1298,39 @@
         .blog-moja img{
                 max-height: 300px
         }
+        .hero-texts h1,
+        .intro h1,
+        .project-intro h1,
+        .intro-hook-column h1,
+        .blog-intro h1{
+              font-size: 35px;
+        }
+        .hero-texts p{
+               width: 100%;
+               font-size: 16px;
+        }
+        .hero-texts h3{
+               flex-direction: column-reverse;
+        }
+        .testimonial-moja p.saying{
+               font-size: 18px;
+               line-height: 30px;
+        }
+        .testimonial-text h4{
+               font-size: 16px;
+        }
+        .testimonial-moja .testimonial-text{
+               width: 100%;
+        }
 }
 
 @media(max-width: 380px){
          .project-moja .project-image{
                max-width: 300px;
                height: 200px;
+         }
+         .blog-intro h1{
+                font-size: 30px;
          }
 }
 

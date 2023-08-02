@@ -31,7 +31,9 @@ const BlogSection = () => {
                                                 <h3><span></span> Blog</h3>
                                                 <h1>Web Development Insights</h1>
                                     </div>
-
+                                    <div className="hero-sparkle"></div>
+                                    <div className="hero-sparkle-four"></div>
+                                    <div className="hero-sparkle-two"></div>
                                     <div className="blog-section-row">
                                                { articles.map(item => 
                                                 <div className="blog-moja" key={item.id}>
