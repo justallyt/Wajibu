@@ -89,7 +89,7 @@ const ProjectSection = () => {
                         if(window.innerWidth > 875){
                                 loadedSlider.style.transform = 'translateX('+(-(size + 100) * counter)+'px)';
                         }else{
-                                 loadedSlider.style.transform = 'translateX('+(-(size + 200) * counter)+'px)';
+                                 loadedSlider.style.transform = 'translateX('+(-(size + 100) * counter)+'px)';
                         }
                 }
                 

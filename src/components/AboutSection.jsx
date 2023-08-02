@@ -52,6 +52,7 @@ const AboutSection = () => {
                    <div className="company-features">
                               <div className="inner-row">
                                            <div className="small-spark"></div>
+                                           
                                            <div className="intro"> 
                                                      <h3>Core Features</h3>
                                                      <h1>Going above and beyond in making your brand shine and unique.</h1>

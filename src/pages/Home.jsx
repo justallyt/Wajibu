@@ -16,10 +16,10 @@ const Home = () => {
            <AboutSection />
            <ServicesSection />
            <ProjectSection />
-           {/* <Reasons />
+           <Reasons />
            <Testimonials />
            <BlogSection />
-           <Footer /> */}
+           <Footer />
     </>
   )
 }

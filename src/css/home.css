@@ -284,8 +284,8 @@
         -webkit-filter: blur(80px);
 }
 .company-features .green-spark{
-       width: 50px;
-       height: 50px;
+       width: 70px;
+       height: 70px;
        background:rgb(0, 237, 110);
        position: absolute;
        right: 0;
@@ -1006,6 +1006,37 @@
          .project-intro h1{
                width: 100%;
          }
+         .reasons-section-content{
+                width: 100%;
+                grid-template-columns: 1fr;
+         }
+         .intro-hook-column{
+                text-align: center;
+         }
+         .intro-hook-column h3{
+                justify-content: center;
+         }
+         .intro-hook-column .reason-image{
+                height: 500px;
+                width: 50%;
+                margin: auto;
+         }
+         .intro-hook-column .reason-image img{
+                object-fit: cover;
+         }
+
+         .testimonials-section-row{
+                 width: 100%;
+         }
+
+         .blog-section-content .blog-intro{
+                 flex-direction: column;
+                 gap: 20px;
+         }
+
+         .blog-section-row{
+                grid-template-columns: repeat(1,1fr);
+         }
 }
 
 @media(max-width: 768px){
@@ -1031,9 +1062,11 @@
          }
          .hero-images-part img{
                  object-fit: cover;
+                 min-height: max-content;
          }
          .intro h1,
-          .project-intro h1{
+          .project-intro h1,
+          .intro-hook-column h1{
                 font-size: 45px;
          }
          .about-content-column p{
@@ -1050,6 +1083,17 @@
          .project-intro .tab-intro h2{
                 font-size: 16px;
          }
+         .intro-hook-column .reason-image{
+                width: 80%;
+         }
+         .testimonials-section .intro p{
+                 width: 100%;
+         }
+
+         .blog-intro h1{
+               width: 100%;
+               font-size: 45px;
+         }
 }
 
 @media(max-width: 500px){
@@ -1057,4 +1101,14 @@
                max-width: 400px;
                height: 300px;
         }
+        .blog-moja img{
+                max-height: 300px
+        }
+}
+
+@media(max-width: 380px){
+         .project-moja .project-image{
+               max-width: 300px;
+               height: 200px;
+         }
 }

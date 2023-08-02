@@ -513,9 +513,25 @@ footer{
        .header-content nav ul {
              display: none;
        }
+       .footer-content .footer-content-row{
+            grid-template-columns: 1fr;
+            gap: 50px;
+       }
+
+}
+@media(max-width: 768px){
+     .other-columns-row{
+              grid-template-columns: 1fr;
+     }
 }
 @media(max-width: 600px){
      .header-content nav .btn{
           display: none;
+     }
+     .footer-column h1{
+           font-size: 45px;
+     }
+     .footer-column p.hook{
+           width: 100%;
      }
 }
