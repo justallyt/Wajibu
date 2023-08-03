@@ -523,6 +523,14 @@ footer{
      .other-columns-row{
               grid-template-columns: 1fr;
      }
+     .copyright{
+             justify-content: center;
+             gap: 10px;
+     }
+     .copyright p,
+.copyright a{
+       text-align: center;
+}
 }
 @media(max-width: 600px){
      .header-content nav .btn{

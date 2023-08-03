@@ -30,12 +30,14 @@ const HeroSection = () => {
            tl.to(heroDesc.current, {
                  y: 0,
                 opacity: 1,
-                duration: 1
+                duration: 1,
+                clipPath: 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)',
            })
            tl.to(heroBtn.current, {
                    y: 0,
                    opacity: 1,
-                   duration: 1
+                   duration: 1,
+                   clipPath: 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)',
            })
   }, [])
   return (

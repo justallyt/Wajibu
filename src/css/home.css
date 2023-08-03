@@ -65,6 +65,7 @@
       -moz-transform: translateY(80px);
       -ms-transform: translateY(80px);
       -o-transform: translateY(80px);
+      clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
 }
 
 .hero-texts .hero-btns{

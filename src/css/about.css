@@ -1,0 +1,67 @@
+.about-intro-section{
+    padding: 80px 0;
+    position: relative;
+}
+.about-intro-section .inner-row{
+       width: 1200px;
+}
+.intro-section-content .intro-texts{
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    gap: 20px;
+}
+.intro-texts h3{
+     color: var(--main-color);
+     font-family: "Madera-Light";
+}
+.intro-texts h2{
+    font-family: "Madera-Medium";
+    font-size: 55px;
+    width: 95%
+}
+.intro-description{
+    display: flex;
+    align-items: flex-end;
+}
+.intro-description p{
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.intro-section-content .intro-images{
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    gap: 20px;
+    margin-top: 50px;
+}
+.intro-images img{
+    object-fit: cover;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+
+@media(max-width: 1250px){
+       .about-intro-section .inner-row{
+           width: 90%;
+       }
+}
+
+@media(max-width: 1080px){
+    .intro-section-content .intro-texts{
+            grid-template-columns: 1fr;
+    }
+    .intro-texts h2{
+          width: 100%;
+    }
+}
+
+@media(max-width: 768px){
+       .intro-texts h2{
+             font-size: 40px;
+       }
+}
