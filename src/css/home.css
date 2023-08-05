@@ -297,7 +297,7 @@
         -ms-border-radius: var(--border-radius);
         -o-border-radius: var(--border-radius);
         object-fit: cover;
-        min-height: 350px;
+        min-height: 400px;
 }
 
 

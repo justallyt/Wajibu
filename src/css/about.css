@@ -1,5 +1,5 @@
 .about-intro-section{
-    padding: 80px 0;
+    padding: 80px 0 100px 0;
     position: relative;
 }
 .about-intro-section .inner-row{
@@ -42,11 +42,102 @@
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
+.about-intro-section .hero-sparkle-two{
+      top: -10%;
+      width: 50px;
+      height: 50px;
+      filter: blur(50px);
+      -webkit-filter: blur(50px);
+}
+
+.about-intro-section .hero-sparkle-three{
+       top:5%;
+}
+.about-intro-section .hero-sparkle-four{
+      left: -10%;
+      bottom: auto;
+      top: 50%;
+      width: 60px;
+      height: 60px;
+      filter: blur(60px);
+      -webkit-filter: blur(60px);
+}
+.about-intro-section .hero-sparkle{
+     right: -5%;
+     top: 5%;
+}
+.about-intro-section .hero-sparkle-five{
+       right: -5%;
+       bottom: 10%;
+}
+
+.statements{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 60px;
+    gap: 50px;
+}
+.statement-moja h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.statement-moja p{
+    font-size: 20px;
+}
+
+.description-section{
+    padding: 100px 0;
+    background: var(--dark-color)
+}
+
+.description-section-content{
+    color: var(--bg-color);
+    display: grid;
+    grid-template-columns: 1.5fr 4fr;
+    gap: 50px;
+}
+.description-section-content h1{
+    font-size: 50px;
+    font-weight: 800;
+    color: var(--main-color);
+}
+.description-texts p{
+       font-size: 20px;
+       margin-bottom: 20px;
+       line-height: 36px;
+       font-family: "Madera-Light";
+}
+
+.values-section{
+      color: var(--bg-color);
+      margin-top: 50px;
+      width: 1150px;
+      margin: 50px auto 0 auto;
+}
+.values-section .values-intro{
+    text-align: center;
+}
+
+.values-intro h3{
+    font-family: "Madera-Light";
+    color: var(--main-color);
+    font-size: 22px;
+}
+.values-intro h1{
+    font-size: 35px;
+    font-family: "Madera-Ultra";
+    width: 85%;
+    margin: auto;
+}
+
+
+
 
 
 
 @media(max-width: 1250px){
-       .about-intro-section .inner-row{
+       .about-intro-section .inner-row,
+       .values-section{
            width: 90%;
        }
 }
@@ -58,10 +149,41 @@
     .intro-texts h2{
           width: 100%;
     }
+    .description-section-content{
+           grid-template-columns: 1fr;
+           gap: 0;
+    }
 }
 
 @media(max-width: 768px){
        .intro-texts h2{
              font-size: 40px;
+       }
+       .values-intro h1{
+            width: 100%;
+            font-size: 25px;
+       }
+       .values-intro h3{
+            font-size: 18px;
+       }
+       .statements{
+             grid-template-columns: 1fr;
+             gap: 20px;
+       }
+}
+
+@media(max-width: 500px){
+       .statement-moja h2{
+             font-size: 30px;
+       }
+       .statement-moja p{
+             font-size: 18px
+       }
+       .description-section-content h1{
+             font-size: 40px;
+       }
+       .description-texts p{
+             font-size: 18px;
+             line-height: 30px;
        }
 }

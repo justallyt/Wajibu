@@ -1,3 +1,4 @@
+import AboutDescription from "../components/AboutDescription"
 import AboutIntro from "../components/AboutIntro"
 import WholeNav from "../components/Navigation/WholeNav"
 import "../css/about.css"
@@ -6,6 +7,7 @@ const About = () => {
       <>
            <WholeNav />
            <AboutIntro />
+           <AboutDescription />
       </>
   )
 }

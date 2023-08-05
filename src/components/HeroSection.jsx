@@ -37,7 +37,6 @@ const HeroSection = () => {
                    y: 0,
                    opacity: 1,
                    duration: 1,
-                   clipPath: 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)',
            })
   }, [])
   return (
