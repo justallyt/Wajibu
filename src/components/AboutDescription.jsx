@@ -1,4 +1,4 @@
-
+import valuesImg from "../assets/valuesImg.jpg"
 const AboutDescription = () => {
   return (
     <div className="description-section">
@@ -17,6 +17,18 @@ const AboutDescription = () => {
                                     <div className="values-intro">
                                                <h3>Our Values</h3>
                                                 <h1>We are demystifying technology that help drive businesses and organizations. Together, we can create clear and clean solutions for contemporary challenges - and prepare for future challenges as well.</h1>
+                                    </div>
+
+
+                                    <div className="values-section-row">
+                                                <div className="values-container">
+                                                            <div className="value-moja">
+                                                                    
+                                                            </div>
+                                                </div>
+                                                <div className="values-image">
+                                                          <img src={valuesImg} alt="" />
+                                                </div>
                                     </div>
                           </div>
                </div>

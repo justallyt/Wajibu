@@ -129,7 +129,12 @@
     width: 85%;
     margin: auto;
 }
-
+.values-section-row{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     gap: 80px;;
+     margin-top: 60px;
+}
 
 
 
