@@ -136,9 +136,27 @@
      margin-top: 60px;
 }
 
-
-
-
+.value-moja{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.value-moja .value-icon{
+     flex-shrink: 0;
+     width: 60px;
+}
+.value-icon img{
+    filter: invert(50%) sepia(55%) saturate(3408%) hue-rotate(169deg) brightness(98%) contrast(101%);
+}
+.value-moja h3{
+    font-size: 20px;
+    font-family: "Madera-Light";
+    margin-bottom: 10px;
+}
+.value-moja p{
+      font-family: "Madera-Light";
+      line-height: 30px;
+}
 
 @media(max-width: 1250px){
        .about-intro-section .inner-row,

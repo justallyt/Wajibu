@@ -1,4 +1,5 @@
 import valuesImg from "../assets/valuesImg.jpg"
+import { values } from "../data/values"
 const AboutDescription = () => {
   return (
     <div className="description-section">
@@ -22,9 +23,17 @@ const AboutDescription = () => {
 
                                     <div className="values-section-row">
                                                 <div className="values-container">
-                                                            <div className="value-moja">
-                                                                    
-                                                            </div>
+                                                            { values.map(item => 
+                                                                 <div className="value-moja" key={item.id}>
+                                                                              <div className="value-icon">
+                                                                                         <img src={item.icon} alt="" />
+                                                                              </div>
+                                                                              <div className="value-texts">
+                                                                                       <h3>{item.title}</h3>
+                                                                                         <p>{item.description}</p>
+                                                                              </div>
+                                                                 </div>
+                                                              )}
                                                 </div>
                                                 <div className="values-image">
                                                           <img src={valuesImg} alt="" />
