@@ -22,7 +22,8 @@ const AboutDescription = () => {
 
 
                                     <div className="values-section-row">
-                                                <div className="values-container">
+                                                <div className="values-section-row-column">
+                                                     <div className="values-container">
                                                             { values.map(item => 
                                                                  <div className="value-moja" key={item.id}>
                                                                               <div className="value-icon">
@@ -34,6 +35,7 @@ const AboutDescription = () => {
                                                                               </div>
                                                                  </div>
                                                               )}
+                                                      </div>
                                                 </div>
                                                 <div className="values-image">
                                                           <img src={valuesImg} alt="" />

@@ -15,6 +15,12 @@ export const values = [
         id: 2,
         icon: '/icons/learning.png',
         title: 'Growth & Learning',
-        description: ''
+        description: 'By viewing every situation as a learning opportunity, we are able to experiment, make mistakes and strive to be a little better to find effective solutions every day.'
+    },
+    {
+         id: 3,
+         icon: '/icons/adaptability.png',
+         title: 'Versatility',
+         description: 'We encourage a cohesive approach of combining different skills and qualities to be able to adapt to solve different challenges that ensue.'
     }
 ]
