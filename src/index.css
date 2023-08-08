@@ -14,7 +14,6 @@
 body{
       font-family: "Madera-Regular";
       background-color: var(--bg-color);
-      overflow: hidden;
 }
 
 ul{
