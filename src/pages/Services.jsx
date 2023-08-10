@@ -2,6 +2,7 @@ import WholeNav from "../components/Navigation/WholeNav"
 import "../css/services.css"
 import service1 from "../assets/services2.jpg"
 import service2 from '../assets/services3.jpg'
+import ServicesBody from "../components/ServicesBody"
 const Services = () => {
   return (
     <>
@@ -21,6 +22,7 @@ const Services = () => {
                               </div>
                     </div>
            </div>
+           <ServicesBody />
     </>
   )
 }
