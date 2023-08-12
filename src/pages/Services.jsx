@@ -3,6 +3,8 @@ import "../css/services.css"
 import service1 from "../assets/services2.jpg"
 import service2 from '../assets/services3.jpg'
 import ServicesBody from "../components/ServicesBody"
+import Nudge from "../components/Nudge"
+import Footer from "../components/Footer"
 const Services = () => {
   return (
     <>
@@ -23,6 +25,8 @@ const Services = () => {
                     </div>
            </div>
            <ServicesBody />
+           <Nudge />
+           <Footer />
     </>
   )
 }

@@ -115,37 +115,130 @@
 
 .service-type-ecommerce{
       display: grid;
-      grid-template-columns: 3fr 2fr;
+      grid-template-columns: 1.5fr 2fr;
       gap: 80px;
 }
+.service-type-ecommerce .service-type-description{
+        display: flex;
+        align-items: center;
+}
+.service-type-ecommerce .ecommerce-images{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 20px;
+      place-items: center;
+}
+.ecommerce-images img:nth-child(1){
+       max-height: 60%;
+}
+.ecommerce-images img,
+.optimization-image img{
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+}
+.service-type-optimization{
+      display: grid;
+      grid-template-columns: 1.3fr 2fr;
+      gap: 50px;
+      width: 1200px;
+      margin: 50px auto 0 auto;
+}
 
+.nudge-section{
+      padding: 100px 0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.nudge-section-content{
+        width: 1200px;
+        margin: auto;
+        color: var(--bg-color);
+        background: var(--dark-color);
+        padding: 100px;
+        text-align: center;
+}
+.nudge-section-content h1{
+      font-size: 60px;
+      width: 80%;
+      margin: 20px auto;
+}
+.nudge-section-content h1 span{
+      color: var(--main-color);
+}
+.nudge-section-content p{
+      font-size: 20px;
+      width: 800px;
+      margin: auto;
+      font-family: "Madera-Light";
+}
+.nudge-section-content .nudge-btn{
+          display: flex;
+          justify-content: center;
+          margin-top: 50px;
+}
 
 @media(max-width: 1280px){
         .service-hero{
-             width: 90%;
-        }
-        .service-hero .service-hero-texts{
              width: 100%;
         }
+        .service-hero .service-hero-texts,
+        .service-type-optimization,
+        .service-type-moja,
+        .nudge-section-content{
+             width: 100%;
+        }
+}
+
+@media(max-width: 1080px){
+         .service-hero{
+               grid-template-columns: 1fr;
+               margin-bottom: 0;
+         }
+        .service-images{
+               margin: auto;
+               gap: 20px;
+        }
+        .service-images img:nth-child(1),
+        .service-images img:nth-child(2){
+               position: relative;
+               bottom: 0;
+               width: 100%;
+               max-height: 350px;
+        }
+
+        .services-body-content .body-intro{
+               width: 100%;
+        }
+         .service-type-moja,
+         .service-type-ecommerce,
+         .service-type-optimization{
+                grid-template-columns: repeat(1,1fr);
+                gap: 30px;
+         }
+         .service-type-moja .service-type-image,
+         .service-type-optimization .optimization-image{
+                order: 2;
+         }
+         .service-type-ecommerce{
+               grid-template-columns: repeat(1,1fr);
+         }
+         .nudge-section-content h1{
+               width: 100%;
+         }
+         .nudge-section-content p{
+                width: 90%;
+         }
+}
+
+@media(max-width: 768px){
+     .service-hero    .service-hero-texts{
+           width: 100%;
+           text-align: center;
+     }
+      .service-images{
+              grid-template-columns: 1fr;
+      }
+      
 }
