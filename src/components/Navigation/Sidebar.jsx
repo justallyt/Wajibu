@@ -104,11 +104,11 @@ const Sidebar = () => {
                            </div>
                            <div className="sidebar-nav">
                                      <ul ref={linksWrap}>
-                                             <li><NavLink to={'/'}>Home</NavLink></li>
-                                             <li><NavLink to={'/about'}>About</NavLink></li>
-                                             <li><NavLink to={'/services'}>Services</NavLink></li>
-                                             <li><NavLink to={'/projects'}>Projects</NavLink></li>
-                                             <li><NavLink to={'/articles'}>Articles</NavLink></li>
+                                                  <li><NavLink to={'/'}>Home</NavLink></li>
+                                                  <li><NavLink to={'/about/'}>About </NavLink></li>
+                                                  <li><NavLink to={'/services/'}>Services</NavLink></li>
+                                                  <li><NavLink to={'/projects/'}>Projects</NavLink></li>
+                                                  <li><NavLink to={'/contact/'}>Contact Us</NavLink></li>
                                      </ul>
                            </div>
                            <div className="mobile-contact-btn">

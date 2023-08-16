@@ -71,8 +71,6 @@
        margin: 20px auto;
        line-height: 36px;
 }
-
-
 .service-type-moja{
       display: grid;
       grid-template-columns: repeat(2,1fr);
@@ -153,11 +151,16 @@
 
 .nudge-section-content{
         width: 1200px;
+        border-radius: 20px;
         margin: auto;
         color: var(--bg-color);
         background: var(--dark-color);
         padding: 100px;
         text-align: center;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
 }
 .nudge-section-content h1{
       font-size: 60px;

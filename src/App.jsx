@@ -4,6 +4,7 @@ import Home from "./pages/Home"
 import Lenis from "@studio-freight/lenis"
 import { Routes, Route } from "react-router-dom"
 import Services from "./pages/Services"
+import Projects from "./pages/Projects"
 function App() {
    const lenis = new Lenis()
    function raf(time) {
@@ -16,6 +17,7 @@ function App() {
                  <Route path="/" element={<Home />} />
                  <Route path='/about/' element={<About />} />
                  <Route path="/services/" element={<Services />} />
+                 <Route path="/projects/" element={<Projects />} />
        </Routes>
   )
 }
