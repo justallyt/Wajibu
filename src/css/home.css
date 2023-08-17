@@ -748,12 +748,12 @@
        max-width: 500px;
        height:400px;
        background: var(--dark-color);
-       border-radius: 8px;
-       -webkit-border-radius: 8px;
-       -moz-border-radius: 8px;
-       -ms-border-radius: 8px;
-       -o-border-radius: 8px;
-       padding: 0px 20px;
+       border-radius: 20px;
+       -webkit-border-radius: 20px;
+       -moz-border-radius: 20px;
+       -ms-border-radius: 20px;
+       -o-border-radius: 20px;
+       padding: 0px 30px;
 }
 .project-image img{
         object-fit: contain;
