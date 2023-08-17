@@ -77,3 +77,40 @@
     grid-template-columns: repeat(3,1fr);
     gap: 30px;
 }
+
+@media(max-width: 1280px){
+      .project-hero-content{
+            width: 90%;
+      }
+}
+
+@media(max-width: 1100px){
+      .project-hero-content{
+           grid-template-columns: 1fr;
+           text-align: center;
+           gap: 30px;
+      }
+      .project-hero-content h1{
+           width: 100%;
+           font-size: 80px;
+      }
+      .hero-desc h3{
+           justify-content: center;
+      }
+      .listings-row{
+           grid-template-columns: repeat(2,1fr);
+      }
+} 
+
+@media(max-width: 768px){
+     .project-hero-content h1{
+           font-size: 60px;;
+     }
+     .listings-row{
+          grid-template-columns: 1fr;
+     }
+     .listings-row .project-moja .project-image{
+           margin: auto;
+           max-width: 100%;
+     }
+}

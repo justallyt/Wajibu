@@ -227,11 +227,14 @@
          .service-type-ecommerce{
                grid-template-columns: repeat(1,1fr);
          }
+         .nudge-section-content{
+               padding: 50px;
+         }
          .nudge-section-content h1{
                width: 100%;
          }
          .nudge-section-content p{
-                width: 90%;
+                width: 100%;
          }
 }
 
@@ -243,5 +246,7 @@
       .service-images{
               grid-template-columns: 1fr;
       }
-      
+      .nudge-section-content h1{
+              font-size: 50px;
+      }
 }

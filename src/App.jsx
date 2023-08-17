@@ -5,6 +5,7 @@ import Lenis from "@studio-freight/lenis"
 import { Routes, Route } from "react-router-dom"
 import Services from "./pages/Services"
 import Projects from "./pages/Projects"
+import Contact from "./pages/Contact"
 function App() {
    const lenis = new Lenis()
    function raf(time) {
@@ -18,6 +19,7 @@ function App() {
                  <Route path='/about/' element={<About />} />
                  <Route path="/services/" element={<Services />} />
                  <Route path="/projects/" element={<Projects />} />
+                 <Route path="/contact-us/" element={<Contact />} />
        </Routes>
   )
 }
