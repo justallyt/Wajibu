@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom"
 import Services from "./pages/Services"
 import Projects from "./pages/Projects"
 import Contact from "./pages/Contact"
+
 function App() {
    const lenis = new Lenis()
    function raf(time) {
