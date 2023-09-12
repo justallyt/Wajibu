@@ -154,10 +154,8 @@ header{
       justify-content: space-between;
       position: relative;
 }
-.header-content .logo h2{
-     font-size: 30px;
-     font-family: "Madera-Medium";
-     color: var(--dark-color);
+.header-content .logo {
+      width: 200px;
 }
 .header-content nav,
 .header-content nav ul,
@@ -348,7 +346,7 @@ footer{
      text-align: center;
 }
 .footer-intro .logo{
-       width: 180px;
+       width: 200px;
        margin: 10px auto;
 }
 .footer-intro h2{
@@ -506,7 +504,7 @@ footer{
 }
 
 /* Responsivity */
-@media(max-width: 1080px){
+@media(max-width: 1150px){
      .mobile-trigger{
           display: flex;
      }

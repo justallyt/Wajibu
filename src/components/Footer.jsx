@@ -5,15 +5,18 @@ import { FaLocationDot } from "react-icons/fa6"
 import { GrFacebookOption, GrTwitter } from 'react-icons/gr'
 import { AiFillInstagram } from "react-icons/ai"
 import { RxLinkedinLogo } from "react-icons/rx"
+import footerLogo from "../assets/logo-white.png"
 const Footer = () => {
   return (
     <footer>
                <div className="inner-row">
                          <div className="footer-content">
                                     <div className="footer-intro">
-                                                 <div className="logo">
-                                                          <h2>PazaLab</h2>
-                                                 </div>
+                                    <NavLink to={''}>
+                                           <div className="logo">
+                                                      <img src={footerLogo} alt="" />
+                                           </div>
+                                </NavLink>
                                                  <p>We&apos;re in the business of creating outsanding web projects in the market.</p>
                                     </div>
 

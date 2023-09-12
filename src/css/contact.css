@@ -39,7 +39,7 @@
        max-height: 450px;
 }
 
-.contact-form-section{
+.contact-form-section .form-box{
      margin: 50px auto 100px;
      border-radius:25px;
      width: 1100px;
@@ -134,4 +134,37 @@ input[type=number] {
     -moz-border-radius: 7px;
     -ms-border-radius: 7px;
     -o-border-radius: 7px;
+}
+
+
+@media(max-width: 1300px){
+    .contact-form-section .form-box,
+    .contact-hero-section{
+            width: 90%;
+    }
+    .contact-images{
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+    }
+    .contact-images img{
+           max-width: 100%;
+    }
+}
+
+@media(max-width: 1080px){
+      .contact-hero-section{
+           grid-template-columns: repeat(1,1fr);
+      }
+      .contact-texts{
+            text-align: center;
+      }
+}
+
+@media(max-width: 600px){
+      .contact-texts h1{
+            font-size: 60px
+      }
+      .contact-form-section .form-box{
+           padding: 50px 30px;
+      }
 }

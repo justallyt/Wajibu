@@ -3,6 +3,7 @@ import { BsPhoneVibrate } from "react-icons/bs"
 import { CgMenuRight} from "react-icons/cg"
 import { useContext } from "react"
 import { mobileMenuContext } from "./menu_context"
+import logo from "../../assets/logo-black.png"
 const Header = () => {
   const [sidebarStatus, setSidebarStatus] = useContext(mobileMenuContext);
 
@@ -13,7 +14,7 @@ const Header = () => {
                       <div className="header-content">
                                 <NavLink to={''}>
                                            <div className="logo">
-                                                    <h2>PazaLab</h2>
+                                                      <img src={logo} alt="" />
                                            </div>
                                 </NavLink>
                                 <nav>
