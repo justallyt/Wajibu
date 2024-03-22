@@ -1,0 +1,27 @@
+.login-wrapper{
+      display: flex;
+      align-items: center;
+      justify-content: center;;
+      height: 100vh;
+}
+.login-content .logo{
+       width: 250px;
+       display: flex;
+       margin: auto;
+}
+.login-content h2{
+      font-size: 35px;
+      text-align: center;
+      font-family: "Madera-Medium";
+}
+.login-content p{
+     color: rgb(72, 72, 72);
+     text-align: center;
+     font-size: 15px;
+     width: 80%;
+     margin: auto auto 40px auto;
+}
+.login-content .form-row label{
+     font-size: 15px;
+     font-family: "Madera-Medium";
+}
